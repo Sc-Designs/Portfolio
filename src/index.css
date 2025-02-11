@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face{
+  font-family: 'Rubik 80s Fade';
+  src: url('/Fonts/Rubik_80s_Fade/Rubik80sFade-Regular.ttf');
+}
+@font-face{
+  font-family: 'Roboto Condensed';
+  src: url('/Fonts/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: 'roboto';
+  src:url('/Fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf') ;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+::selection{
+  background-color: #2bf694;
+  color: #032b72;
+}
+::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+  background-color: #27272a;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #00ec82;
+}
+::-webkit-scrollbar-thumb:active{
+  background-color: #c100ec;
+}
+body {
+  overflow-x: hidden;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+#links::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  right: 0;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.5s ease-out;
+  z-index: -1;
+  border-radius: 15px;
+}
+#links:hover::after{
+  transform: scaleX(1);
+  border-radius:5px;
+  transition: transform 0.5s ease-out;
+}
+#navbar{
+  backdrop-filter: blur(7px);
+  background: #5252524c;
+  border: 5px double #4d4d4d;
+}
+#h{
+  font-family: 'Rubik 80s Fade';
+}
+.ello{
+  font-family: 'Roboto Condensed';
+}
+#aboutBox h1, #projectsBox h1{
+  font-family: 'roboto';
+}
+.circle{
+  background-image: linear-gradient(to left top, #eab308, #fc961e, #ff7739, #ff5753, #e82f7c, #ce2d86, #4b2b58, #281f35, #0e0e0e,#000000,#000000);
+  filter: blur(25px);
+}
+.scroll-dark::after{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #0E0E0E, transparent);
+  z-index: 2;
+}
+.scroll-dark::before{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to left, #0E0E0E, transparent);
+  z-index: 2;
+}
+.scroll-light::after{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #EAB308, transparent);
+  z-index: 2;
+}
+.scroll-light::before{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to left,#EAB308, transparent);
+  z-index: 2;
+}
+
+.scrolltext {
+  position: absolute;
+  z-index: 1;
+}
+.hero {
+  font-family: "Rubik 80s Fade";
+}

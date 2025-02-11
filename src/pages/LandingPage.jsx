@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { motion } from "motion/react";
 import { animate } from "motion";
 import { useMediaQuery } from "react-responsive";
-import profile_img from "../../public/img/profile_img.png";
+import profile_img from "/img/profile_img.png";
 import { Link } from 'react-router-dom';
 
 const LandingPage = ({ theme, loder }) => {
